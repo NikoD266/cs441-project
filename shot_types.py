@@ -100,4 +100,65 @@ print(long_df.head(50))
 
 print(long_df.shape)
 
-csv_data = long_df.to_csv('player_shots_data.csv')
+# Define the mapping from original shot_type to descriptive labels
+shot_type_map = {
+    'Fside': 'forehand_side',
+    'Bside': 'backhand_side',
+    'F': 'forehand_groundstroke',
+    'B': 'backhand_groundstroke',
+    'R': 'forehand_slice',
+    'S': 'backhand_slice',
+    'V': 'forehand_volley',
+    'Z': 'backhand_volley',
+    'O': 'overhead_smash',
+    'P': 'backhand_overhead_smash',
+    'U': 'forehand_drop_shot',
+    'Y': 'backhand_drop_shot',
+    'L': 'forehand_lob',
+    'M': 'backhand_lob',
+    'H': 'forehand_half_volley',
+    'I': 'backhand_half_volley',
+    'J': 'forehand_swinging_volley',
+    'K': 'backhand_swinging_volley'
+}
+
+# Filter and rename shot types
+filtered_df = long_df[long_df['shot_type'].isin(shot_type_map.keys())].copy()
+filtered_df['shot_type'] = filtered_df['shot_type'].map(shot_type_map)
+
+# Pivot to wide format
+reshaped_df = filtered_df.pivot(index='player', columns='shot_type', values=[
+    'shot_usage_pct', 'winner_pct', 'induced_forced_pct', 'unforced_pct'
+])
+
+# Flatten MultiIndex columns
+reshaped_df.columns = [f"{shot}_{metric}" for metric, shot in reshaped_df.columns]
+
+# Reset index
+reshaped_df = reshaped_df.reset_index()
+
+# Define custom shot type order
+shot_order = [
+    'forehand_side', 'backhand_side',
+    'forehand_groundstroke', 'backhand_groundstroke',
+    'forehand_slice', 'backhand_slice',
+    'forehand_volley', 'backhand_volley',
+    'overhead_smash', 'backhand_overhead_smash',
+    'forehand_drop_shot', 'backhand_drop_shot',
+    'forehand_lob', 'backhand_lob',
+    'forehand_half_volley', 'backhand_half_volley',
+    'forehand_swinging_volley', 'backhand_swinging_volley'
+]
+
+# Reorder columns by shot type prefix
+ordered_cols = ['player']
+for shot in shot_order:
+    ordered_cols += [col for col in reshaped_df.columns if col.startswith(shot)]
+
+# Final reordered DataFrame
+reshaped_df = reshaped_df[ordered_cols]
+
+# Display result
+print(reshaped_df.head(50))
+
+csv_data = reshaped_df.to_csv('player_shot_types.csv')
