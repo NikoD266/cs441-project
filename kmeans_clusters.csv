@@ -1,0 +1,797 @@
+,player,Kmeans_cluster
+0,Abedallah Shelbayh,1
+1,Adam Pavlasek,0
+2,Adam Walton,0
+3,Adrian Andreev,0
+4,Adrian Garcia,1
+5,Adrian Mannarino,3
+6,Adrian Voinea,0
+7,Adrien Bossel,0
+8,Agustin Calleri,0
+9,Agustin Velotti,0
+10,Aisam Ul Haq Qureshi,2
+11,Akira Santillan,1
+12,Alan Mackin,0
+13,Albano Olivetti,2
+14,Albert Costa,3
+15,Albert Montanes,3
+16,Albert Ramos,3
+17,Alberto Martin,3
+18,Alejandro Davidovich Fokina,1
+19,Alejandro Falla,0
+20,Alejandro Gonzalez,0
+21,Alejandro Lopez Escribano,3
+22,Alejandro Moro Canas,0
+23,Alejandro Tabilo,1
+24,Aleksandar Kovacevic,1
+25,Aleksandar Vukic,1
+26,Aleksandr Nedovyesov,0
+27,Aleksandre Metreveli,1
+28,Alessandro Giannessi,3
+29,Alex Barrena,0
+30,Alex Bogdanovic,0
+31,Alex Bogomolov Jr,3
+32,Alex Bolt,3
+33,Alex Corretja,0
+34,Alex De Minaur,0
+35,Alex Kuznetsov,1
+36,Alex Marti Pujolras,3
+37,Alex Michelsen,1
+38,Alex Molcan,0
+39,Alexander Blockx,1
+40,Alexander Bublik,2
+41,Alexander Cozbinov,0
+42,Alexander Popp,2
+43,Alexander Ritschard,3
+44,Alexander Shevchenko,1
+45,Alexander Vasilenko,0
+46,Alexander Waske,2
+47,Alexander Zverev,1
+48,Alexandr Dolgopolov,1
+49,Alexandre Muller,0
+50,Alexandre Penaud,3
+51,Alexei Popyrin,1
+52,Alexey Vatutin,0
+53,Alexis Galarneau,3
+54,Aljaz Bedene,0
+55,Altug Celikbilek,0
+56,Alvaro Guillen Meza,3
+57,Amir Weintraub,0
+58,Andre Agassi,0
+59,Andrea Arnaboldi,2
+60,Andrea Collarini,3
+61,Andrea Pellegrino,3
+62,Andrea Vavassori,1
+63,Andreas Haider Maurer,1
+64,Andreas Seppi,0
+65,Andreas Vinciguerra,0
+66,Andrei Pavel,1
+67,Andrei Stoliarov,0
+68,Andrej Martin,3
+69,Andres Artunedo,0
+70,Andrew Harris,0
+71,Andrey Golubev,1
+72,Andrey Kuznetsov,1
+73,Andrey Rublev,1
+74,Andy Murray,1
+75,Andy Roddick,1
+76,Ante Pavic,1
+77,Antoine Bellier,2
+78,Antoine Escoffier,1
+79,Antoine Hoang,0
+80,Antonio Veic,0
+81,Aristotelis Thanos,0
+82,Arklon Huertas Del Pino,0
+83,Arnaud Clement,1
+84,Arnaud Di Pasquale,3
+85,Arthur Cazaux,1
+86,Arthur Fery,1
+87,Arthur Fils,1
+88,Arthur Rinderknech,1
+89,Aslan Karatsev,1
+90,Attila Balazs,0
+91,Axel Michon,3
+92,Baptiste Crepatte,3
+93,Beibit Zhukayev,1
+94,Ben Shelton,1
+95,Benjamin Balleret,0
+96,Benjamin Becker,3
+97,Benjamin Bonzi,1
+98,Benjamin Hassan,1
+99,Benoit Paire,1
+100,Bernabe Zapata Miralles,0
+101,Bernard Tomic,1
+102,Billy Harris,0
+103,Bjorn Fratangelo,2
+104,Bjorn Phau,0
+105,Blaz Kavcic,0
+106,Blaz Rola,3
+107,Bob Bryan,2
+108,Bobby Reynolds,3
+109,Bohdan Ulihrach,0
+110,Borna Coric,1
+111,Borna Gojo,1
+112,Botic Van De Zandschulp,1
+113,Bradley Klahn,0
+114,Brandon Holt,0
+115,Brandon Nakashima,1
+116,Brayden Schnur,1
+117,Brian Battistone,2
+118,Bruno Kuzuhara,3
+119,Bu Yunchaokete,0
+120,Cameron Norrie,3
+121,Camilo Ugo Carabelli,3
+122,Carlos Alcaraz,1
+123,Carlos Berlocq,0
+124,Carlos Eduardo Severino,0
+125,Carlos Gimeno Valero,3
+126,Carlos Moya,3
+127,Carlos Taberner,3
+128,Casper Ruud,1
+129,Cedric Pioline,1
+130,Cedrik Marcel Stebe,3
+131,Cem Ilkel,3
+132,Charles Broom,0
+133,Chase Buchanan,0
+134,Chieh Fu Wang,3
+135,Chris Guccione,2
+136,Christian Harrison,3
+137,Christoph Negritu,1
+138,Christophe Rochus,0
+139,Christopher Eubanks,1
+140,Christopher Heyman,3
+141,Christopher Oconnell,1
+142,Chun Hsin Tseng,3
+143,Clement Chidekh,1
+144,Coleman Wong,3
+145,Colton Smith,1
+146,Conner Huertas Del Pino,3
+147,Constant Lestienne,1
+148,Cooper Kose,0
+149,Cooper Williams,0
+150,Corentin Denolly,0
+151,Corentin Moutet,3
+152,Cristian Garin,1
+153,Dalibor Svrcina,0
+154,Damir Dzumhur,0
+155,Daniel Altmaier,1
+156,Daniel Dutra Da Silva,3
+157,Daniel Elahi Galan,3
+158,Daniel Evans,1
+159,Daniel Gimeno Traver,3
+160,Daniel Kosakowski,0
+161,Daniel Masur,2
+162,Daniel Michalski,3
+163,Daniel Nestor,2
+164,Daniel Nguyen,1
+165,Daniel Rincon,0
+166,Daniel Smethurst,0
+167,Daniil Medvedev,0
+168,Danilo Petrovic,2
+169,Darian King,0
+170,Dario Acosta,0
+171,David Ferrer,3
+172,David Goffin,1
+173,David Guez,0
+174,David Nalbandian,0
+175,David Prinosil,2
+176,Davide Sanguinetti,0
+177,Denis Gremelmayr,0
+178,Denis Istomin,0
+179,Denis Kudla,0
+180,Denis Shapovalov,1
+181,Dennis Novak,1
+182,Dennis Novikov,2
+183,Devin Britton,2
+184,Diego Hartfield,0
+185,Diego Schwartzman,0
+186,Dimitar Kuzmanov,3
+187,Dino Prizmic,3
+188,Dmitry Popko,3
+189,Dmitry Tursunov,2
+190,Dominic Stricker,1
+191,Dominic Thiem,1
+192,Dominik Hrbaty,0
+193,Dominik Koepfer,1
+194,Donald Young,0
+195,Dragos Dima,0
+196,Duck Hee Lee,0
+197,Dudi Sela,0
+198,Duje Ajdukovic,1
+199,Dusan Lajovic,3
+200,Dustin Brown,2
+201,Dylan Dietrich,2
+202,Dzmitry Zhyrmont,0
+203,Edouard Roger Vasselin,1
+204,Eduardo Russi,0
+205,Eduardo Struvay,2
+206,Egor Gerasimov,1
+207,Elias Ymer,0
+208,Eliot Spizzirri,0
+209,Elliot Benchetrit,1
+210,Elmer Moller,0
+211,Emil Ruusuvuori,0
+212,Emilio Gomez,0
+213,Emilio Nava,1
+214,Enzo Couacaud,0
+215,Ergi Kirkin,0
+216,Ernesto Escobedo,0
+217,Ernests Gulbis,0
+218,Ethan Quinn,1
+219,Evan Furness,3
+220,Evan King,3
+221,Evan Zhu,0
+222,Evgeny Donskoy,1
+223,Evgeny Korolev,3
+224,Fabian Marozsan,1
+225,Fabio Fognini,1
+226,Fabrice Santoro,1
+227,Facundo Arguello,3
+228,Facundo Bagnis,3
+229,Facundo Diaz Acosta,3
+230,Facundo Mena,0
+231,Farrukh Dustov,0
+232,Federico Agustin Gomez,1
+233,Federico Arnaboldi,1
+234,Federico Cina,1
+235,Federico Coria,3
+236,Federico Delbonis,3
+237,Federico Gaio,1
+238,Federico Luzzi,0
+239,Feliciano Lopez,1
+240,Felix Auger Aliassime,1
+241,Felix Mantilla,0
+242,Fernando Gonzalez,1
+243,Fernando Romboli,0
+244,Fernando Verdasco,1
+245,Filip Bergevi,3
+246,Filip Cristian Jianu,0
+247,Filip Horansky,1
+248,Filip Krajinovic,1
+249,Filip Misolic,1
+250,Filippo Volandri,3
+251,Fitriadi M Rifqi,3
+252,Flavio Cobolli,1
+253,Flavio Saretta,0
+254,Florent Serra,3
+255,Florian Mayer,0
+256,Frances Tiafoe,1
+257,Francesco Maestrelli,1
+258,Francesco Passaro,1
+259,Francisco Cerundolo,1
+260,Francisco Comesana,1
+261,Francisco Llanes,3
+262,Franco Skugor,0
+263,Franco Squillari,0
+264,Frank Dancevic,2
+265,Gabriel Decamps,0
+266,Gabriel Diallo,1
+267,Gabriele Felline,3
+268,Gael Monfils,1
+269,Gastao Elias,1
+270,Gaston Gaudio,3
+271,Gavin Van Peperzeel,1
+272,Genaro Alberto Olivieri,3
+273,George Bastl,0
+274,Gerald Melzer,1
+275,Germain Gigounon,0
+276,Gianluca Mager,0
+277,Gianluigi Quinzi,0
+278,Gijs Brouwer,3
+279,Gilles Arnaud Bailly,0
+280,Gilles Muller,2
+281,Gilles Simon,0
+282,Giorgio Galimberti,0
+283,Giovanni Lapentti,3
+284,Giovanni Mpetshi Perricard,2
+285,Giulio Zeppieri,3
+286,Goncalo Oliveira,1
+287,Gonzalo Escobar,3
+288,Gonzalo Lama,3
+289,Goran Ivanisevic,2
+290,Govind Nanda,0
+291,Greg Rusedski,2
+292,Grega Zemlja,2
+293,Gregoire Barrere,0
+294,Grigor Dimitrov,1
+295,Guido Andreozzi,3
+296,Guido Pella,3
+297,Guillermo Canas,3
+298,Guillermo Coria,0
+299,Guillermo Garcia Lopez,1
+300,Gustavo Kuerten,1
+301,Guy Den Ouden,3
+302,Hady Habib,1
+303,Hamad Medjedovic,1
+304,Harel Levy,0
+305,Harold Mayot,0
+306,Henri Laaksonen,3
+307,Henrique Rocha,3
+308,Hernan Casanova,3
+309,Hiroki Moriya,3
+310,Ho Gi Kang,3
+311,Holger Rune,1
+312,Horacio Zeballos,1
+313,Hubert Hurkacz,1
+314,Hugo Dellien,3
+315,Hugo Gaston,3
+316,Hugo Grenier,1
+317,Hunter Reese,0
+318,Hyeon Chung,0
+319,Hyung Taik Lee,3
+320,Ignacio Buse,3
+321,Igor Andreev,3
+322,Igor Sijsling,2
+323,Illya Marchenko,3
+324,Ilya Ivashka,3
+325,Inaki Montes De La Torre,3
+326,Inigo Cervantes Huegun,1
+327,Irakli Labadze,0
+328,Ivan Dodig,1
+329,Ivan Gakhov,1
+330,Ivan Ljubicic,1
+331,Ivo Heuberger,0
+332,Ivo Karlovic,2
+333,Ivo Minar,0
+334,Izak Van Der Merwe,0
+335,J J Wolf,1
+336,Jack Brasington,3
+337,Jack Draper,1
+338,Jack Sock,1
+339,Jacob Fearnley,1
+340,Jaime Faria,1
+341,Jakub Mensik,1
+342,James Blake,1
+343,James Duckworth,1
+344,James Mccabe,0
+345,James Trotter,3
+346,James Ward,1
+347,Jan Choinski,0
+348,Jan Hernych,0
+349,Jan Kroslak,0
+350,Jan Kumstat,0
+351,Jan Lennard Struff,2
+352,Jan Michael Gambill,0
+353,Janko Tipsarevic,0
+354,Jannik Sinner,1
+355,Jared Donaldson,1
+356,Jarkko Nieminen,0
+357,Jarmere Jenkins,3
+358,Jason Jung,0
+359,Jason Kubler,0
+360,Jaume Munar,0
+361,Javier Barranco Cosano,3
+362,Jay Clarke,0
+363,Jean Rene Lisnard,3
+364,Jean Yves Aubone,3
+365,Jelle Sels,3
+366,Jenson Brooksby,0
+367,Jeremy Chardy,3
+368,Jeremy Jahn,3
+369,Jerome Kym,1
+370,Jerzy Janowicz,1
+371,Jesper De Jong,1
+372,Jimmy Wang,0
+373,Jiri Lehecka,1
+374,Jiri Novak,0
+375,Jiri Vanek,0
+376,Jiri Vesely,1
+377,Jo Wilfred Tsonga,1
+378,Jo Wilfried Tsonga,1
+379,Joachim Johansson,1
+380,Joao Fonseca,1
+381,Joao Menezes,0
+382,Joao Sousa,3
+383,Joao Souza,3
+384,Johan Sebastien Tatlot,0
+385,Johannes Haerteis,2
+386,John Isner,2
+387,John Millman,0
+388,Jonas Bjorkman,1
+389,Jordan Thompson,1
+390,Joris De Loore,3
+391,Jose Acasuso,1
+392,Jose Hernandez,1
+393,Jose Rubin Statham,0
+394,Joshua Sheehy,1
+395,Jozef Kovalik,1
+396,Juan Carlos Ferrero,0
+397,Juan Carlos Prado Angelo,3
+398,Juan Carlos Saez,3
+399,Juan Ignacio Chela,3
+400,Juan Ignacio Londero,3
+401,Juan Manuel Cerundolo,3
+402,Juan Martin Del Potro,1
+403,Juan Monaco,0
+404,Juan Pablo Varillas,3
+405,Julian Reister,3
+406,Julien Benneteau,1
+407,Julien Boutter,1
+408,Juncheng Shang,3
+409,Jurgen Melzer,0
+410,Jurgen Zopp,0
+411,Jurij Rodionov,1
+412,Kamil Majchrzak,0
+413,Karen Khachanov,1
+414,Karim Mohamed Maamoun,0
+415,Karlis Ozolins,1
+416,Karol Beck,0
+417,Karue Sell,3
+418,Kasidit Samrej,3
+419,Kaylan Bigun,3
+420,Kei Nishikori,1
+421,Kevin Anderson,1
+422,Kevin King,1
+423,Kevin Krawietz,2
+424,Kilian Feldbausch,1
+425,Kimmer Coppejans,3
+426,Kiranpal Pannu,0
+427,Konstantin Kravchuk,0
+428,Kris Van Wyk,1
+429,Kristian Pless,1
+430,Kristof Vliegen,1
+431,Kyle Edmund,1
+432,Kyrian Jacquet,1
+433,Laslo Djere,1
+434,Laurent Lokoli,1
+435,Laurynas Grigelis,1
+436,Leandro Riedi,1
+437,Learner Tien,0
+438,Leo Borg,0
+439,Leonardo Mayer,1
+440,Li Tu,0
+441,Liam Broady,0
+442,Liam Draxl,1
+443,Liang Chi Huang,3
+444,Lleyton Hewitt,1
+445,Lloyd Harris,1
+446,Lorenzo Giustino,1
+447,Lorenzo Musetti,1
+448,Lorenzo Sonego,1
+449,Luca Nardi,0
+450,Luca Van Assche,1
+451,Luca Vanni,1
+452,Lucas Catarina,0
+453,Lucas Pouille,1
+454,Luciano Darderi,1
+455,Lukas Klein,1
+456,Lukas Lacko,1
+457,Lukas Neumayer,3
+458,Lukas Rosol,1
+459,Lukasz Kubot,0
+460,Mackenzie Mcdonald,1
+461,Magnus Norman,1
+462,Makoto Ochi,1
+463,Maks Kasnikowski,0
+464,Malek Jaziri,0
+465,Marat Safin,1
+466,Marc Andrea Huesler,1
+467,Marc Gicquel,3
+468,Marc Lopez,3
+469,Marc Polmans,0
+470,Marc Rosset,1
+471,Marc Sieber,1
+472,Marcel Granollers,0
+473,Marcelo Arevalo,3
+474,Marcelo Rios,0
+475,Marco Cecchinato,1
+476,Marco Trungelliti,0
+477,Marcos Baghdatis,1
+478,Marcos Daniel,2
+479,Marcos Giron,1
+480,Marcus Willis,2
+481,Mardy Fish,1
+482,Mariano Navone,0
+483,Mariano Puerta,3
+484,Mariano Zabaleta,3
+485,Marin Cilic,1
+486,Marinko Matosevic,0
+487,Mario Ancic,1
+488,Mario Vilella Martinez,3
+489,Marius Copil,2
+490,Mark Lajal,3
+491,Mark Philippoussis,2
+492,Markus Hipfl,1
+493,Marsel Ilhan,3
+494,Martin Borisiouk,0
+495,Martin Cuevas,0
+496,Martin Klizan,1
+497,Martin Landaluce,3
+498,Martin Redlicki,1
+499,Martin Verkerk,1
+500,Marton Fucsovics,0
+501,Masamichi Imamura,1
+502,Mate Delic,3
+503,Mate Valkusz,3
+504,Mateus Alves,3
+505,Mathias Bourgue,0
+506,Matt Reid,3
+507,Matteo Arnaldi,1
+508,Matteo Berrettini,1
+509,Matteo Martineau,1
+510,Matthew Ebden,1
+511,Matthias Bachinger,0
+512,Mattia Bellucci,0
+513,Matwe Middelkoop,2
+514,Mauricio Echazu,3
+515,Max Hans Rehberg,1
+516,Max Houkes,1
+517,Max Mirnyi,2
+518,Max Purcell,1
+519,Maxime Cressy,2
+520,Maximilian Marterer,1
+521,Maximilian Neuchrist,3
+522,Maximo Gonzalez,1
+523,Mees Rottgering,0
+524,Michael Berrer,2
+525,Michael Geerts,3
+526,Michael Llodra,2
+527,Michael Mmoh,0
+528,Michael Redlicki,3
+529,Michael Russell,0
+530,Michael Zheng,0
+531,Michal Przysiezny,1
+532,Michel Kratochvil,0
+533,Mikael Ymer,0
+534,Mike Bryan,1
+535,Mikhail Kukushkin,0
+536,Mikhail Youzhny,0
+537,Mili Poljicak,0
+538,Miljan Zekic,3
+539,Milos Raonic,1
+540,Milos Sekulic,0
+541,Miloslav Mecir Jr,0
+542,Minhtuan Pham,3
+543,Miomir Kecmanovic,1
+544,Mirza Basic,1
+545,Mischa Zverev,2
+546,Mitchell Krueger,0
+547,Moez Echargui,0
+548,Mohamed Safwat,3
+549,Murphy Cassone,1
+550,N Sriram Balaji,0
+551,Naoki Nakagawa,3
+552,Nattan Benjasupawan,0
+553,Nicholas Alan Van Aken,0
+554,Nick Hardt,0
+555,Nick Kyrgios,2
+556,Nicola Kuhn,1
+557,Nicolai Budkov Kjaer,0
+558,Nicolas Almagro,1
+559,Nicolas Alvarez Varona,3
+560,Nicolas Devilder,3
+561,Nicolas Escude,0
+562,Nicolas Jarry,2
+563,Nicolas Kiefer,0
+564,Nicolas Lapentti,0
+565,Nicolas Mahut,2
+566,Nicolas Massu,3
+567,Nicolas Mejia,3
+568,Nicolas Moreno De Alboran,3
+569,Nicolas Thomann,3
+570,Niels Visker,3
+571,Nikola Cacic,0
+572,Nikola Milojevic,0
+573,Nikolas Sanchez Izquierdo,0
+574,Nikolay Davydenko,1
+575,Nikoloz Basilashvili,1
+576,Nino Serdarusic,3
+577,Nishesh Basavareddy,1
+578,Noah Rubin,3
+579,Norbert Gombos,1
+580,Novak Djokovic,1
+581,Nuno Borges,3
+582,Oleksandr Ovcharenko,0
+583,Oleksii Krutykh,1
+584,Olivier Rochus,0
+585,Omar Jasika,0
+586,Oscar Otte,1
+587,Otto Virtanen,1
+588,Ozan Baris,0
+589,Pablo Andujar,1
+590,Pablo Carreno Busta,1
+591,Pablo Cuevas,3
+592,Pablo Llamas Ruiz,1
+593,Paolo Lorenzi,1
+594,Paradorn Srichaphan,2
+595,Patrick Brady,0
+596,Patrick Kaukovalta,2
+597,Patrick Kypson,3
+598,Patrick Rafter,2
+599,Paul Capdeville,0
+600,Paul Henri Mathieu,0
+601,Paul Jubb,1
+602,Pavel Kotov,0
+603,Pavel Tsoy,3
+604,Pedja Krstin,0
+605,Pedro Araujo,0
+606,Pedro Cachin,0
+607,Pedro Martinez,1
+608,Pedro Sousa,3
+609,Pete Sampras,2
+610,Peter Bertran,3
+611,Peter Fajta,1
+612,Peter Gojowczyk,3
+613,Peter Polansky,3
+614,Petros Tsitsipas,1
+615,Philipp Kohlschreiber,1
+616,Philipp Petzschner,1
+617,Pierre Hugues Herbert,2
+618,Pol Martin Tiffon,3
+619,Potito Starace,3
+620,Prajnesh Gunneswaran,3
+621,Preston Stearns,3
+622,Quentin Halys,2
+623,Radek Stepanek,2
+624,Radu Albot,3
+625,Rafael Arevalo,3
+626,Rafael Nadal,3
+627,Rainer Schuettler,0
+628,Ramkumar Ramanathan,3
+629,Raphael Collignon,3
+630,Raul Brancaccio,1
+631,Rei Sakamoto,1
+632,Reilly Opelka,2
+633,Renzo Olivo,3
+634,Ricardas Berankis,1
+635,Ricardo Hocevar,0
+636,Riccardo Bonadio,0
+637,Richard Gasquet,1
+638,Richard Krajicek,2
+639,Rinky Hijikata,1
+640,Rio Noguchi,0
+641,Robby Ginepri,1
+642,Robert Kendrick,1
+643,Roberto Bautista Agut,0
+644,Roberto Carballes Baena,3
+645,Roberto Cid,3
+646,Roberto Marcora,0
+647,Roberto Quiroz,3
+648,Robin Bertrand,0
+649,Robin Haase,1
+650,Robin Soderling,1
+651,Robin Vik,0
+652,Rodrigo Pacheco Mendez,3
+653,Roger Federer,1
+654,Rogerio Dutra Silva,1
+655,Roman Andres Burruchaga,1
+656,Roman Safiullin,1
+657,Roy Smith,1
+658,Ruben Bemelmans,0
+659,Ruben Gonzales,2
+660,Ruben Ramirez Hidalgo,0
+661,Rudolf Molleker,1
+662,Rudy Coco,0
+663,Ryan Harrison,1
+664,Ryan Seggerman,3
+665,Saidalo Saidkarimov,1
+666,Salvatore Caruso,3
+667,Sam Querrey,1
+668,Samuel Groth,2
+669,Sanam Singh,0
+670,Sandro Ehrat,0
+671,Sanjar Fayziev,0
+672,Santiago Giraldo,0
+673,Sargis Sargsian,0
+674,Sascha Gueymard Wayenburg,0
+675,Scott Griekspoor,3
+676,Scoville Jenkins,1
+677,Sebastian Baez,3
+678,Sebastian Fanselow,2
+679,Sebastian Korda,1
+680,Sebastian Ofner,1
+681,Sebastien Grosjean,1
+682,Seong Chan Hong,3
+683,Sergey Fomin,0
+684,Sergiy Stakhovsky,2
+685,Shintaro Mochizuki,1
+686,Sho Katayama,1
+687,Sho Shimabukuro,0
+688,Simone Bolelli,3
+689,Sjeng Schalken,0
+690,Somdev Devvarman,3
+691,Soon Woo Kwon,1
+692,Stan Wawrinka,1
+693,Stefan Edberg,0
+694,Stefan Koubek,3
+695,Stefan Kozlov,3
+696,Stefano Napolitano,2
+697,Stefano Travaglia,0
+698,Stefanos Sakellaridis,1
+699,Stefanos Tsitsipas,1
+700,Stephane Robert,0
+701,Steve Darcis,0
+702,Steve Johnson,1
+703,Steven Diez,0
+704,Strong Kirchheimer,3
+705,Sumit Nagal,3
+706,Takao Suzuki,2
+707,Tallon Griekspoor,1
+708,Taro Daniel,0
+709,Taylor Dent,2
+710,Taylor Fritz,1
+711,Tennys Sandgren,1
+712,Teymuraz Gabashvili,1
+713,Thai Son Kwiatkowski,3
+714,Thanasi Kokkinakis,1
+715,Thiago Agustin Tirante,3
+716,Thiago Monteiro,1
+717,Thiago Seyboth Wild,1
+718,Thiemo De Bakker,1
+719,Thijs Boogaard,0
+720,Thomas Enqvist,1
+721,Thomas Fabbiano,3
+722,Thomas Johansson,1
+723,Thomas Muster,3
+724,Thomaz Bellucci,3
+725,Ti Chen,1
+726,Tim Henman,1
+727,Tim Smyczek,3
+728,Tim Van Rijthoven,1
+729,Timofey Skatov,3
+730,Titouan Droguet,0
+731,Tobias Kamke,1
+732,Todd Martin,2
+733,Todd Reid,3
+734,Tomas Barrios Vera,0
+735,Tomas Behrend,0
+736,Tomas Berdych,1
+737,Tomas Machac,1
+738,Tomas Martin Etcheverry,3
+739,Tomas Zib,0
+740,Tomasz Berkieta,1
+741,Tommy Haas,0
+742,Tommy Paul,1
+743,Tommy Robredo,3
+744,Tristan Schoolkate,1
+745,Tsung Hua Yang,3
+746,Tung Lin Wu,1
+747,Ty Trombetta,0
+748,Ugo Blanchet,3
+749,Ugo Humbert,1
+750,Uladzimir Ignatik,0
+751,Ulises Blanch,2
+752,Vaclav Safranek,3
+753,Valentin Royer,1
+754,Valentin Vacherot,1
+755,Vasek Pospisil,1
+756,Victor Estrella,3
+757,Victor Hanescu,0
+758,Viktor Durasovic,3
+759,Viktor Troicki,0
+760,Vilius Gaubas,3
+761,Vincent Millot,3
+762,Vincent Spadea,0
+763,Vincenzo Santopadre,1
+764,Vit Kopriva,0
+765,Vladimir Ivanov,1
+766,Vladimir Voltchkov,2
+767,Wayne Arthurs,2
+768,Wayne Ferreira,0
+769,Wayne Odesnik,0
+770,Werner Eschauer,0
+771,Wesley Moodie,2
+772,Xavier Malisse,1
+773,Yannick Hanfmann,1
+774,Yannick Maden,0
+775,Yannick Mertens,0
+776,Yasutaka Uchiyama,1
+777,Yen Hsun Lu,0
+778,Yevgeny Kafelnikov,0
+779,Yibing Wu,1
+780,Yoshihito Nishioka,3
+781,Yosuke Watanuki,1
+782,Younes El Aynaoui,1
+783,Younes Lalami Laaroussi,1
+784,Yu Hsiou Hsu,3
+785,Yuichi Ito,3
+786,Yuichi Sugita,0
+787,Yuki Bhambri,1
+788,Zachary Svajda,0
+789,Zdenek Kolar,1
+790,Ze Zhang,1
+791,Zeljko Krajan,0
+792,Zhe Li,0
+793,Zhizhen Zhang,1
+794,Zizou Bergs,1
+795,Zsombor Piros,1
