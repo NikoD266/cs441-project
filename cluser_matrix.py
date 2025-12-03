@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 
 pd.set_option('display.max_columns', None)
@@ -55,10 +56,10 @@ def get_cluster_matrix(clusters_data, matches_data, year_start, year_end, cluste
     ).rename(columns={"cluster": "loser_cluster"}).drop(columns=["player"])
 
     matches["null_count"] = matches[["winner_cluster", "loser_cluster"]].isna().sum(axis=1)
-    print(f"Rows with 0 missing clusters: {(matches['null_count'] == 0).sum()}")
-    print(f"Rows with 1 missing cluster:  {(matches['null_count'] == 1).sum()}")
-    print(f"Rows with 2 missing clusters: {(matches['null_count'] == 2).sum()}")
-    print()
+    # print(f"Rows with 0 missing clusters: {(matches['null_count'] == 0).sum()}")
+    # print(f"Rows with 1 missing cluster:  {(matches['null_count'] == 1).sum()}")
+    # print(f"Rows with 2 missing clusters: {(matches['null_count'] == 2).sum()}")
+    # print()
 
     df = matches.dropna(subset=["winner_cluster", "loser_cluster"]).copy()
 
@@ -145,29 +146,49 @@ def get_cluster_elo_matrices(clusters_data, matches_data, year_start, year_end, 
 
     # Function to compute combined average ELO
     def compute_avg_elo(df, elo_col_winner, elo_col_loser):
-        # Average winner ELO for cluster_i vs cluster_j
-        df1 = df.groupby(["winner_cluster", "loser_cluster"])[elo_col_winner].mean().reset_index()
-        # Average loser ELO for cluster_j vs cluster_i
-        df2 = df.groupby(["loser_cluster", "winner_cluster"])[elo_col_loser].mean().reset_index()
-        df2 = df2.rename(columns={
-            "loser_cluster": "winner_cluster",
-            "winner_cluster": "loser_cluster",
-            elo_col_loser: elo_col_winner
-        })
-        # Combine
-        combined = pd.concat([df1, df2])
-        matrix = combined.groupby(["winner_cluster", "loser_cluster"])[elo_col_winner].mean().unstack(fill_value=pd.NA)
-        matrix = matrix.reindex(index=clusters, columns=clusters, fill_value=pd.NA)
+        # # Average winner ELO for cluster_i vs cluster_j
+        # df1 = df.groupby(["winner_cluster", "loser_cluster"])[elo_col_winner].mean().reset_index()
+        # # Average loser ELO for cluster_j vs cluster_i
+        # df2 = df.groupby(["loser_cluster", "winner_cluster"])[elo_col_loser].mean().reset_index()
+        # df2 = df2.rename(columns={
+        #     "loser_cluster": "winner_cluster",
+        #     "winner_cluster": "loser_cluster",
+        #     elo_col_loser: elo_col_winner
+        # })
+        # # Combine
+        # combined = pd.concat([df1, df2])
+        # matrix = combined.groupby(["winner_cluster", "loser_cluster"])[elo_col_winner].mean().unstack(fill_value=pd.NA)
+        # matrix = matrix.reindex(index=clusters, columns=clusters, fill_value=pd.NA)
+        matrix = np.zeros((4,4))
+        for i in range(4):
+            for j in range(i,4):
+                if i == j:
+                    df1 = df[((df['winner_cluster'] == i) & (df['loser_cluster'] == j))]
+                    matrix[i, j] = (df1[elo_col_winner].mean() + df1[elo_col_loser].mean()) / 2
+                else:
+                    df1 = df[(df['winner_cluster'] == i) & (df['loser_cluster'] == j)]
+                    df2 = df[(df['loser_cluster'] == i) & (df['winner_cluster'] == j)]
+                    sum11 = df1[elo_col_winner].sum()
+                    count11 = df1[elo_col_winner].count()
+                    sum12 = df1[elo_col_loser].sum()
+                    count12 = df1[elo_col_loser].count()
+                    sum21 = df2[elo_col_winner].sum()
+                    count21 = df2[elo_col_winner].count()
+                    sum22 = df2[elo_col_loser].sum()
+                    count22 = df2[elo_col_loser].count()
+                    matrix[i, j] = (sum11 + sum22) / (count11 + count22)
+                    matrix[j, i] = (sum12 + sum21) / (count12 + count21)
+        # matrix i,j is i's avg elo when playing against j
         return matrix
 
     avg_global_elo = compute_avg_elo(df, "r_w_global_before", "r_l_global_before")
     avg_surface_elo = compute_avg_elo(df, "r_w_surface_before", "r_l_surface_before")
 
-    print("Average Global ELO:")
-    print(avg_global_elo, "\n")
-
-    print("Average Surface ELO:")
-    print(avg_surface_elo, "\n")
+    # print("Average Global ELO:")
+    # print(avg_global_elo, "\n")
+    #
+    # print("Average Surface ELO:")
+    # print(avg_surface_elo, "\n")
 
     return avg_global_elo, avg_surface_elo
 
