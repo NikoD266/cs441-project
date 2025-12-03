@@ -4,8 +4,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
 
-clusters = pd.read_csv("C:\\Users\\ejpot\\Downloads\\clusters.csv") # clusters dataframe
-matches = pd.read_csv("C:\\Users\\ejpot\\Downloads\\elo_atp_matches_20xx.csv") # matches dataframe (2000-present)
+#clusters = pd.read_csv("C:\\Users\\ejpot\\Downloads\\clusters.csv") # clusters dataframe
+#matches = pd.read_csv("C:\\Users\\ejpot\\Downloads\\elo_atp_matches_20xx.csv") # matches dataframe (2000-present)
 
 def get_cluster_matrix(clusters_data, matches_data, year_start, year_end, cluster_type):
 
@@ -85,16 +85,16 @@ def get_cluster_matrix(clusters_data, matches_data, year_start, year_end, cluste
 
     win_pct = win_counts / match_counts.replace(0, pd.NA)
 
-    print("Win counts:")
-    print(win_counts, "\n")
+    # print("Win counts:")
+    # print(win_counts, "\n")
+    #
+    # print("Match counts:")
+    # print(match_counts, "\n")
+    #
+    # print("Win percentages:")
+    # print(win_pct)
 
-    print("Match counts:")
-    print(match_counts, "\n")
-
-    print("Win percentages:")
-    print(win_pct)
-
-    return ""
+    return win_pct
 
 
 
@@ -174,8 +174,8 @@ def get_cluster_elo_matrices(clusters_data, matches_data, year_start, year_end, 
 
 
 
-get_cluster_matrix(clusters, matches, 2000, 2025, "kmeans")
-get_cluster_elo_matrices(clusters, matches, 2000, 2025, "kmeans")
+#get_cluster_matrix(clusters, matches, 2000, 2025, "kmeans")
+#get_cluster_elo_matrices(clusters, matches, 2000, 2025, "kmeans")
 
 
 
