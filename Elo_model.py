@@ -156,7 +156,33 @@ def save_outputs(ratings_global, ratings_surface, history_df, player_last_match,
     pd.DataFrame([overall]).to_csv(os.path.join(output, "overall_brier_summary.csv"), index=False)
     print(f"Saved all csv outputs into {output}")
 
+def add_elo_to_matches(original_df, history_df):
+    # Keep only relevant Elo columns and identifying info
+    elo_cols = [
+        "winner_name", "loser_name", "date",
+        "r_w_global_before", "r_l_global_before",
+        "r_w_surface_before", "r_l_surface_before"
+    ]
+    elo_info = history_df[elo_cols].copy()
+    
+    # Merge on winner, loser, and date
+    merged_df = original_df.merge(
+        elo_info,
+        left_on=["winner_name", "loser_name", "tourney_date_parsed"],
+        right_on=["winner_name", "loser_name", "date"],
+        how="left"
+    )
+    merged_df.drop(columns=["date"], inplace=True)  # drop extra date column from merge
+    return merged_df
 
+def save_matches_with_elo(df):
+    for fname in df["source_file"].unique():
+        sub_df = df[df["source_file"] == fname].copy()
+        out_path = os.path.join(output, f"elo_{fname}")
+        sub_df.to_csv(out_path, index=False)
+        print(f"Saved Elo-enhanced file: {out_path}")
+
+'''
 def main():
     print("Loading matches...")
     all_matches = load_all_matches()
@@ -167,6 +193,27 @@ def main():
     ratings_global, ratings_surface, history_df, player_last_match = run_elo(matches)
     save_outputs(ratings_global, ratings_surface, history_df, player_last_match, cutoff_year=2024)
     print("Outputs are updated in CSVs")
+'''
+def main():
+    print("Loading matches...")
+    all_matches = load_all_matches()
+    print(f"Loaded {len(all_matches)} rows from CSVs.")
+    
+    matches = prepare_matches(all_matches)
+    print(f"{len(matches)} matches after preparation.")
+    
+    print("Running Elo updates...")
+    ratings_global, ratings_surface, history_df, player_last_match = run_elo(matches)
+    
+    print("Adding Elo columns to original matches...")
+    matches_with_elo = add_elo_to_matches(matches, history_df)
+    
+    print("Saving Elo-enhanced matches...")
+    save_matches_with_elo(matches_with_elo)
+    
+    print("Saving other Elo outputs...")
+    save_outputs(ratings_global, ratings_surface, history_df, player_last_match, cutoff_year=2024)
+    print("All outputs updated.")
 
 
 if __name__ == "__main__":
